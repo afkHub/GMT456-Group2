@@ -1,0 +1,324 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>PROJECT DESCRIPTION &mdash; Save Attributes 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="UNIT TESTING" href="unittest.html" />
+    <link rel="prev" title="Documentation of The Group 2 Project" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Save Attributes
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sections:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PROJECT DESCRIPTION</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#interface-features">Interface &amp; Features</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#case-1">Case 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#case-2">Case 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#case-3">Case 3</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#usage-video">Usage Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-languages">Supported Languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authors-contact">Authors &amp; Contact</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unittest.html">UNIT TESTING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">FUNCTIONS</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Save Attributes</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PROJECT DESCRIPTION</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/rst/project.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="project-description">
+<h1>PROJECT DESCRIPTION<a class="headerlink" href="#project-description" title="Permalink to this headline">¶</a></h1>
+<p>    Hello everyone! We have created and contributed new features to a <strong>QGIS plugin</strong> called <br/> <strong>“Save Attributes”</strong>. You may find a brief information about the plugin below.</p>
+<div class="section" id="interface-features">
+<h2>Interface &amp; Features<a class="headerlink" href="#interface-features" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default">
+<img alt="../_images/GUI.png" src="../_images/GUI.png" />
+</div>
+<p>  You could select the shapefile from the interface (Input layer part). And there will be 3 main cases:</p>
+<div class="section" id="case-1">
+<h3>Case 1<a class="headerlink" href="#case-1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer geometry is line; the plugin will compute the shortest and real distance among features, azimuth and reverse azimuth between lines’ start points and end points. And also draw the shortest line with its length. See below,</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/line_1feat.jfif" src="../_images/line_1feat.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/lines_attr.jfif" src="../_images/lines_attr.jfif" />
+</div>
+<dl class="simple">
+<dt><br/></dt><dd><p>If there is more than one feature on layer. It will also show the features which could possibly be a polygon.</p>
+</dd>
+</dl>
+<div class="figure align-default">
+<img alt="../_images/line_mult.jfif" src="../_images/line_mult.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/azimuth.png" src="../_images/azimuth.png" />
+</div>
+</div>
+<div class="section" id="case-2">
+<h3>Case 2<a class="headerlink" href="#case-2" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer is point. It will check whether feature number is greater than 2. If it is the case, it  will calculate the minimum and maxiumum distannce among all points and draw the lines related to them. See below,</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/minmax.jfif" src="../_images/minmax.jfif" />
+</div>
+<div class="figure align-default">
+<img alt="../_images/point_attr.jfif" src="../_images/point_attr.jfif" />
+</div>
+</div>
+<div class="section" id="case-3">
+<h3>Case 3<a class="headerlink" href="#case-3" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>If the input layer is polygon, the plugin computes the area and perimeter of the poligons and show in the table with inserting.</p>
+</div></blockquote>
+<div class="figure align-default">
+<img alt="../_images/area-peri.png" src="../_images/area-peri.png" />
+</div>
+<p><br/>
+<br/>
+<em>Note</em>: We used this to be able to add our university logo to the GUI: <a class="reference external" href="https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer">https://gis.stackexchange.com/questions/381661/image-adding-problem-to-qgis-plugin-gui-with-qt-designer</a> (You may need to run the “compile.bat” file in the folder according to you for the logo.)</p>
+</div>
+</div>
+<div class="section" id="usage-video">
+<h2>Usage Video<a class="headerlink" href="#usage-video" title="Permalink to this headline">¶</a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pJdj8PcLHI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p><br/></p>
+</div>
+<div class="section" id="supported-languages">
+<h2>Supported Languages<a class="headerlink" href="#supported-languages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../_images/eng.png"><img alt="eng" src="../_images/eng.png" style="width: 32.0px; height: 32.0px;" /></a> <strong>English</strong>     <br/></p></li>
+<li><p><a class="reference internal" href="../_images/tur.png"><img alt="tur" src="../_images/tur.png" style="width: 32.0px; height: 32.0px;" /></a> <strong>Türkçe</strong>      <br/></p></li>
+<li><p><a class="reference internal" href="../_images/deu.png"><img alt="deu" src="../_images/deu.png" style="width: 32.0px; height: 32.0px;" /></a> <strong>Deutsche</strong>    <br/></p></li>
+<li><p><a class="reference internal" href="../_images/esp.png"><img alt="esp" src="../_images/esp.png" style="width: 32.0px; height: 32.0px;" /></a> <strong>Española</strong>    <br/></p></li>
+<li><p><a class="reference internal" href="../_images/rus.png"><img alt="rus" src="../_images/rus.png" style="width: 32.0px; height: 32.0px;" /></a> <strong>русский</strong>             <br/></p></li>
+</ul>
+<p>    You can choose any of the supported languages from the QGIS settings and use the graphical user interface with the language of your choice.</p>
+<div class="figure align-center" id="id1">
+<img alt="../_images/lang1.png" src="../_images/lang1.png" />
+<p class="caption"><span class="caption-text">Spanish GUI</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>    We used <strong>Qt Linguist</strong> software while translating languages. If you want to add your own language to the plugin, you can provide translation with Qt Linguist. <a class="reference internal" href="../_images/qtlin.jpg"><img alt="qtl" src="../_images/qtlin.jpg" style="width: 45.0px; height: 45.0px;" /></a></p>
+<img alt="../_images/lang2.png" src="../_images/lang2.png" />
+<p><br/></p>
+</div>
+<div class="section" id="authors-contact">
+<h2>Authors &amp; Contact<a class="headerlink" href="#authors-contact" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 43%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Author</p></th>
+<th class="head"><p>Contact</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ahmet Fırat Karaoğlu</p></td>
+<td><p><a class="reference external" href="mailto:karaoglu&#37;&#52;&#48;email&#46;com">karaoglu<span>&#64;</span>email<span>&#46;</span>com</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Metehan Ergen</p></td>
+<td><p><a class="reference external" href="mailto:metehan&#46;ergenn&#37;&#52;&#48;gmail&#46;com">metehan<span>&#46;</span>ergenn<span>&#64;</span>gmail<span>&#46;</span>com</a></p></td>
+</tr>
+</tbody>
+</table>
+<p><br/>
+<br/>
+<a class="reference internal" href="../index.html#home"><span class="std std-ref">Homepage</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="unittest.html" class="btn btn-neutral float-right" title="UNIT TESTING" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../index.html" class="btn btn-neutral float-left" title="Documentation of The Group 2 Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Ahmet Fırat Karaoğlu &amp; Metehan Ergen.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
