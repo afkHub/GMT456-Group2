@@ -79,7 +79,7 @@ Supported Languages
 |br|    
 
 Authors & Contact
-------------------
+-------------------
 
 ========================  ============================
    Author     			   Contact

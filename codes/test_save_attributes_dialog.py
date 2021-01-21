@@ -1,25 +1,10 @@
-import unittest
-import os               # Source imports
-import sys
-import logging
+""""
+Briefly it tests whether the found minimum and maxiumum distances
+is equal to the pre-determined output The second test tests
+if the input features have equal distances to each other,
+will the tests give the expected output.
 
-
-sys.path.append("C:\\Program Files\\QGIS 3.16\\apps\\qgis\\python\\")
-sys.path.append("C:\\Program Files\\QGIS 3.16\\apps\\qgis\\python\\qgis")
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "../../save_attributes") # Path organizations
-sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/")
-
-from qgis.testing.mocked import get_iface
-from qgis.testing import start_app, unittest # qgis imports
-from qgis.core import *
-from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication
-
-from save_attributes.save_attributes import SaveAttributes
-from save_attributes.save_attributes_dialog import SaveAttributesDialog  # Local imports
-from utilities import test_data_folder
-start_app()
-
-
+"""
 class SaveAttributesDialogTest(unittest.TestCase):
     """Test dialog works."""
     @classmethod

@@ -190,7 +190,7 @@ class SaveAttributes:
             self.iface.removeToolBarIcon(action)
 
     def select_output_file(self):
-        """"
+        """
 
         Select output file
 
@@ -205,7 +205,7 @@ class SaveAttributes:
     def error_msg(self,text):
         """
 
-        Required error message for user
+        Provides required error message for user.
         
         """
         QMessageBox.warning(self.dlg.show(), self.tr("Save attributes Message"), self.tr(str(text)),QMessageBox.Ok)
@@ -251,8 +251,10 @@ class SaveAttributes:
             self.dlg.label_wrong_input.setText("Please enter a suitable input file")
 
     
-    """def poly_area(self,geom):
-
+    def poly_area(self,geom):
+        """
+        Necessary function for calculating the area and perimeter of polygons. 
+        """
         llayer = QgsVectorLayer(self.dlg.lineEdit_input_shp.text(), 
                                         self.name, 
                                         "ogr")
@@ -286,9 +288,12 @@ class SaveAttributes:
                     llayer.updateFields()
                     llayer.commitChanges()
 
-    """
+    
 
     def transform_to_epsg_4326(self, point):
+        """ 
+        For transform the coordinates to EPSG 4326 Reference System
+        """
         if self.canvas.mapSettings().destinationCrs().authid() != 'EPSG:4326':
             crs_src = self.canvas.mapSettings().destinationCrs()
             crs_dest = QgsCoordinateReferenceSystem(4326)
@@ -331,12 +336,25 @@ class SaveAttributes:
 
     def run(self):
         
-        start = timeit.default_timer()
         """
 
-        Run method that performs all the real work
+        **Run method that performs all the real work.**
+        
+
+        *If there is a point layer input
+                -Azimuth Calculation
+                -Create x,y values and min & max distance lines
+        *If there is a line layer input
+                -Azimuth Calculation
+                -Detect Polygons and create a layer from them
+                -Create the shortest line layer and show on QGIS interface
+        *If there is a polygon layer input
+                -Area and perimeter calculation
         
         """
+        
+        start = timeit.default_timer()
+
         
         # Create the dialog with elements (after translation) and keep reference
         # Only create GUI ONCE in callback, so that it will only load when the plugin is started

@@ -39,6 +39,7 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="test_save_attributes_dialog module" href="test_save_attributes_dialog.html" />
     <link rel="prev" title="plugin_upload module" href="plugin_upload.html" /> 
 </head>
 
@@ -89,9 +90,12 @@
 <li class="toctree-l1"><a class="reference internal" href="project.html">PROJECT DESCRIPTION</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unittest.html">UNIT TESTING</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">FUNCTIONS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Utilities.html">Utilities module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="great_distance.html">great_distance module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="plugin_upload.html">plugin_upload module</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">save_attributes module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test_save_attributes_dialog.html">test_save_attributes_dialog module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modules.html#indices">Indices</a></li>
 </ul>
 </li>
 </ul>
@@ -247,7 +251,7 @@ added to self.actions list.</p>
 <dl class="py method">
 <dt id="save_attributes.SaveAttributes.error_msg">
 <code class="sig-name descname">error_msg</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/save_attributes.html#SaveAttributes.error_msg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#save_attributes.SaveAttributes.error_msg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Required error message for user</p>
+<dd><p>Provides required error message for user.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -263,15 +267,32 @@ added to self.actions list.</p>
 </dd></dl>
 
 <dl class="py method">
+<dt id="save_attributes.SaveAttributes.poly_area">
+<code class="sig-name descname">poly_area</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">geom</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/save_attributes.html#SaveAttributes.poly_area"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#save_attributes.SaveAttributes.poly_area" title="Permalink to this definition">¶</a></dt>
+<dd><p>Necessary function for calculating the area and perimeter of polygons.</p>
+</dd></dl>
+
+<dl class="py method">
 <dt id="save_attributes.SaveAttributes.run">
 <code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/save_attributes.html#SaveAttributes.run"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#save_attributes.SaveAttributes.run" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p><strong>Run method that performs all the real work.</strong></p>
+<dl class="simple">
+<dt><a href="#id1"><span class="problematic" id="id2">*</span></a>If there is a point layer input</dt><dd><p>-Azimuth Calculation
+-Create x,y values and min &amp; max distance lines</p>
+</dd>
+<dt><a href="#id3"><span class="problematic" id="id4">*</span></a>If there is a line layer input</dt><dd><p>-Azimuth Calculation
+-Detect Polygons and create a layer from them
+-Create the shortest line layer and show on QGIS interface</p>
+</dd>
+<dt><a href="#id5"><span class="problematic" id="id6">*</span></a>If there is a polygon layer input</dt><dd><p>-Area and perimeter calculation</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt id="save_attributes.SaveAttributes.select_output_file">
 <code class="sig-name descname">select_output_file</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/save_attributes.html#SaveAttributes.select_output_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#save_attributes.SaveAttributes.select_output_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>“</p>
-<p>Select output file</p>
+<dd><p>Select output file</p>
 </dd></dl>
 
 <dl class="py method">
@@ -295,7 +316,8 @@ added to self.actions list.</p>
 <dl class="py method">
 <dt id="save_attributes.SaveAttributes.transform_to_epsg_4326">
 <code class="sig-name descname">transform_to_epsg_4326</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">point</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/save_attributes.html#SaveAttributes.transform_to_epsg_4326"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#save_attributes.SaveAttributes.transform_to_epsg_4326" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>For transform the coordinates to EPSG 4326 Reference System</p>
+</dd></dl>
 
 <dl class="py method">
 <dt id="save_attributes.SaveAttributes.unload">
@@ -313,6 +335,7 @@ added to self.actions list.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="test_save_attributes_dialog.html" class="btn btn-neutral float-right" title="test_save_attributes_dialog module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="plugin_upload.html" class="btn btn-neutral float-left" title="plugin_upload module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
